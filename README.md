@@ -1,4 +1,4 @@
-# Blog Site Project
+# LEKHAN
 
 Welcome to the LEKHAN! This project is a simple blog site built using Node.js, Express.js, EJS, MongoDB, HTML, CSS, and Bootstrap. The site allows users to create, view, and manage blog posts, with user authentication for added functionality.
 
@@ -33,29 +33,28 @@ You need to have Node.js and npm installed on your machine. You can download the
 To run this project locally, follow these steps:
 
 1. **Clone the Repository:**
-   ```bash
+   ```sh
    git clone https://github.com/your-username/blogsite_project.git
    cd blogsite_project
-
+    ```
 2. **Install Dependencies:**
  Make sure you have Node.js and MongoDB installed on your machine.
-    ```bash
-npm install
-
+    ```sh
+   npm install
+     ```
 3. **Create a .env file in the root directory and add the following environment variables:**
   ```plaintext
 
  MONGODB_URI=mongodb+srv://<username>: <password>@cluster0.mongodb.net/blogsite?retryWrites=true&w=majority
 SESSION_SECRET=your_secret_key
-
-
+  ```
 4. **Start MongoDB:**
 Ensure that your MongoDB server is running. You can start it with the following command if you have MongoDB installed locally:
      ```bash
-mongod
+    mongod
 5. **Run the Application:**
    ```bash
-node app.js
+   node app.js
 
 6. **Open in Browser:**
 Open your browser and go to http://localhost:3000 to see the blog site in action.

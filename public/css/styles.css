@@ -1,0 +1,159 @@
+/* General styles */
+body {
+  background-image: url('/images/Dark\ purple\ gradient\ wallpaper\ 1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar specific styles */
+.navbar {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 28px;
+  font-weight: bolder;
+  color: #333 !important;
+}
+
+.navbar-nav > li > a {
+  font-size: 16px;
+  color: #333 !important;
+  padding: 15px 20px;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: #1abc9c !important;
+}
+
+/* Home page styles */
+.container.text-center {
+  margin-top: 50px;
+}
+
+.container.text-center h1 {
+  font-family: 'Times New Roman', serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #86ba26f2;
+}
+
+.container.text-center p {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  color: #fff;
+}
+
+.container.text-center .btn {
+  margin-top: 20px;
+}
+
+/* About page styles */
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #333;
+}
+
+.social-links a:hover {
+  color: #1abc9c;
+}
+
+/* Form container styles */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form specific styles */
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #1abc9c;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #16a085;
+}
+
+/* Footer specific styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #568b1e;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer p {
+  font-family: Georgia, serif;
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* specific styles for about page */
+.card-body h2 {
+  font-family: 'Times New Roman', serif;
+  padding-bottom: 25px;
+}
+
+.card-body h5{
+  font-family: Georgia, serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+  
+}
+
+.card-body h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* specific styles for post.ejs */
+.postings{
+  padding-left: 20px;
+  padding-right: 10px;
+}

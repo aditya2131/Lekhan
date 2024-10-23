@@ -15,6 +15,7 @@
     "express": "^4.16.3",
     "express-session": "^1.18.0",
     "lodash": "^4.17.21",
-    "mongoose": "^8.4.5"
+    "mongoose": "^8.4.5",
+    "nodemon": "^3.1.7"
   }
 }

@@ -11,12 +11,13 @@ const homeStartingContent = "Bring Your Ideas to Life: Design a stunning blog th
 const aboutContent = "Welcome to the LEKHAN! This site is a platform where users can create, view, and manage blog posts with ease.";
 
 const app = express();
+require('dotenv').config();
 
 app.use(express.static('public'));
 
 // Set up session middleware
 app.use(session({
-    secret: 'secret', // Change this to a more secure secret in production
+    secret: process.env.SESSION_SECRET || 'secret', // Using env variable for session secret
     resave: false,
     saveUninitialized: false
 }));
@@ -26,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/blogDB", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const postSchema = new mongoose.Schema({
     title: String,
@@ -141,6 +142,7 @@ app.get("/logout", function(req, res) {
 });
 
 // Start server
-app.listen(3000, function() {
-    console.log("Brain the size of earth, ShutUp aditya!! starting your server on port 3000.");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function() {
+    console.log(`Server is running on port ${PORT}.`);
 });
